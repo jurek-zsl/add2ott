@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add to OpenTogetherTube</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="config-view" class="view">
+    <h2>Configuration</h2>
+    <form id="config-form">
+      <div class="form-group">
+        <label for="server-address">Server Address:</label>
+        <input type="url" id="server-address" placeholder="https://opentogethertube.com" required>
+      </div>
+      <div class="form-group">
+        <label for="username">Username/Email:</label>
+        <input type="text" id="username" placeholder="Your username or email">
+        <small>Optional - leave empty to use as guest</small>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Your password">
+        <small>Required only if logging in</small>
+      </div>
+      <button type="submit" class="btn btn-primary">Save & Connect</button>
+    </form>
+  </div>
+
+  <div id="main-view" class="view hidden">
+    <div class="header">
+      <h2>Add to OTT</h2>
+      <button id="settings-btn" class="btn-icon" title="Settings">⚙️</button>
+    </div>
+
+    <div class="form-group">
+      <label for="room-select">Room:</label>
+      <select id="room-select">
+        <option value="">Loading rooms...</option>
+      </select>
+      <button id="refresh-rooms" class="btn-icon" title="Refresh rooms">🔄</button>
+    </div>
+
+    <div class="form-group">
+      <label for="video-url">Video URL:</label>
+      <input type="text" id="video-url" placeholder="Paste video URL here">
+      <button id="add-video" class="btn btn-primary">Add Video</button>
+    </div>
+
+    <div class="form-group">
+      <label class="checkbox-label">
+        <input type="checkbox" id="enable-yt-controls">
+        <span>Enable YouTube controls in OTT player</span>
+      </label>
+    </div>
+
+    <div id="status-message" class="status hidden"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
