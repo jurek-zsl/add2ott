@@ -1,4 +1,4 @@
-# 🖕add2ott
+# ➕add2ott
 
 Chrome and Firefox extension for quicker adding videos to OpenTogetherTube Rooms.
 
