@@ -33,7 +33,7 @@ Chrome and Firefox extension for quicker adding videos to OpenTogetherTube Rooms
 
 **Firefox:**
 
-1. Download `Add2OTT.xpi` from Releases.
+1. Download `Add2OTT.zip` from Releases.
 
 2. Go to `about:addons`.
 
